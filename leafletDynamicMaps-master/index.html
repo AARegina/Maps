@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MAPS</title>
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+  <h1>Dynamic Maps with Leaflet</h1>
+    <table id="markerTable" style="width:100%">
+        <tr>
+          <th>Superhero Name</th>
+          <th>City</th>
+          <th>Coordinates</th>
+        </tr>
+        <tr onclick=testFunction(this)>
+          <td>Spiderman</td>
+          <td>New York, USA</td>
+          <td id="spidermanCord">40.743720, -73.822030</td>
+        </tr>
+        <tr onclick=testFunction2(this)>
+          <td>Hulk</td>
+          <td>Ohio, USA</td>
+          <td id="hulkCord">39.760979, -84.192200</td>
+        </tr>
+        <tr onclick=testFunction3(this)>
+          <td>Wolverine</td>
+          <td>Cold Lake, Alberta, Canada</td>
+          <td id="wolverineCord">54.464180, -110.182259</td>
+        </tr>
+    </table>
+    <div id="mapid" style = "width:80%; height:580px;"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
